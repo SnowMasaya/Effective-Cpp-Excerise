@@ -12,12 +12,14 @@
 #include "Widget.h"
 using namespace std;
 
-int main(){
+int tmp_main8(){
 
 	Widget w;
 	vector<bool> features(const Widget& w);
 
-	auto highPriority = static_cast<bool>(features(w)[5]);
+	//auto highPriority = static_cast<bool>(features(w)[5]);
+
+	//cout << highPriority << endl;
 
 	return 0;
 }

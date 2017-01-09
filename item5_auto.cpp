@@ -9,7 +9,6 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#include "Widget.h"
 using namespace std;
 
 unordered_map<string, int>m;
@@ -27,4 +26,3 @@ int tmp_main7(){
 
 	return 0;
 }
-
