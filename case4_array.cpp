@@ -9,24 +9,19 @@
 using namespace std;
 template<typename T>
 
-void f3(T param){
+void f4(T param){
      cout << param << endl;
 }
 
 
-int tmp_main3(){
-	int x = 27;
-	const int cx = x;
-	const int& rx = x;
-	const char* const ptr = "Fun with pointers";
+int tmp_main4(){
+	const char name[] = "J. P. Briggs";
 
-	f3(x);
+	const char * ptrToName = name;
 
-	f3(cx);
+	f4(name);
 
-	f3(rx);
-
-	f3(ptr);
+	f4(ptrToName);
 
 	return 0;
 }
