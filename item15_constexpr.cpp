@@ -42,7 +42,7 @@ struct constN
 	constN() {cout << n << endl;}
 };
 
-int main()
+int tmp_main15()
 {
 
 	cout << "4! = ";
