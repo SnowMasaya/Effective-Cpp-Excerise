@@ -32,7 +32,7 @@ public:
 };
 
 
-int main()
+int tmp_main14()
 {
 	T t;
 	U u;
