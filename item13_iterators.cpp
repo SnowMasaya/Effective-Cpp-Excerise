@@ -20,7 +20,7 @@ void findAndInsert(C& container,
 	container.insert(it, insertVal);
 }
 
-int main(){
+int tmp_main13(){
 
 	vector<int> values;
 

@@ -33,8 +33,6 @@ public:
 	DataType& data() &
 	{return values;}
 
-	DataType& data() &&
-	{return std::move(values);}
 private:
 	DataType values;
 };
