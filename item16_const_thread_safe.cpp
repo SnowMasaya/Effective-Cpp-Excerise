@@ -21,7 +21,7 @@ void safe_increment()
 	cout << this_thread::get_id() << ": " << g_i << endl;
 }
 
-int main()
+int tmp_main16()
 {
 	cout << __func__ << ": " << g_i << endl;
 
