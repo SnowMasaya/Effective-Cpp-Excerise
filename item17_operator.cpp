@@ -51,7 +51,7 @@ Fraction operator*(Fraction lhs, const Fraction& rhs)
 	return lhs *= rhs;
 }
 
-int main()
+int tmp_main17()
 {
 	Fraction f1(3, 8), f2(1, 2), f3(10,2);
 	cout << f1 << " * " << f2 << " = " << f1 * f2 << endl
