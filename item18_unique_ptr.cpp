@@ -21,7 +21,7 @@ void f(const Foo &)
 	cout << "f(const Foo&)" << endl;
 }
 
-int tmp_main19()
+int tmp_main18()
 {
 	unique_ptr<Foo> p1(new Foo);
 

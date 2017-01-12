@@ -39,7 +39,7 @@ void thr(shared_ptr<Base> p)
 	}
 }
 
-int main()
+int tmp_main19()
 {
 	shared_ptr<Base> p = make_shared<Derived>();
 	cout << "Created a shared Derived (as a pointer to Base)\n"

@@ -24,7 +24,7 @@ void f()
 	}
 }
 
-int main()
+int tmp_main20()
 {
 	{
 		auto sp = make_shared<int>(42);
