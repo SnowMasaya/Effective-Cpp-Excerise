@@ -43,7 +43,7 @@ unique_ptr<T> make_unique1(U&&... u)
 	return unique_ptr<T>(new T(forward<U>(u)...));
 }
 
-int main()
+int tmp_main23()
 {
 	string str = "Hello";
 	vector<string> v;

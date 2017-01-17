@@ -31,7 +31,7 @@ int (*(foo)(void))(int) {
 	return f;
 }
 
-int main()
+int tmp_main26()
 {
 	int (*pf)(double) = f;
 	int (&rf)(int) = f;

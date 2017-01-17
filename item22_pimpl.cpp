@@ -8,13 +8,13 @@
 
 #include<iostream>
 #include<memory>
-#include <experimental/propagate_const>
+//#include <experimental/propagate_const>
 
 using namespace std;
 
 class widget{
 	class impl;
-	std::experimental::propagate_const<unique_ptr<impl>> pImpl;
+	//std::experimental::propagate_const<unique_ptr<impl>> pImpl;
 public:
 	void draw() const;
 	void draw();
@@ -40,16 +40,16 @@ public:
 	}
 	impl(int n) : n(n) {}
 };
-void widget::draw() const  {pImpl->draw(*this);}
-void widget::draw() {pImpl->draw(*this);}
-widget::widget(int n) : pImpl{make_unique<impl>(n)} {}
+//void widget::draw() const  {pImpl->draw(*this);}
+//void widget::draw() {pImpl->draw(*this);}
+//widget::widget(int n) : pImpl{make_unique<impl>(n)} {}
 widget::~widget() = default;
 widget& widget::operator=(widget&&) = default;
 
-int main()
+int tmp_main22()
 {
-	widget w(7);
-	const widget w2(8);
-	w.draw();
-	w2.draw();
+	//widget w(7);
+	//const widget w2(8);
+	//w.draw();
+	//w2.draw();
 }

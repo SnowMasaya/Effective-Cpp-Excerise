@@ -26,7 +26,7 @@ void f(int&& x)
 	cout << "rvalue referenceto const overload f(" << x << ")" << endl;
 }
 
-int main()
+int tmp_main24()
 {
 	int i = 1;
 	const int ci = 2;
