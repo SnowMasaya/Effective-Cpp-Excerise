@@ -42,7 +42,7 @@ unique_ptr<T> make_unique(U&&... u)
 	return unique_ptr<T>(new T(forward<U>(u)...));
 }
 
-int main() {
+int tmp_main30() {
 
 	auto p1 = make_unique1<A>(2);
 	int i = 1;
