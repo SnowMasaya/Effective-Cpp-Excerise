@@ -32,7 +32,7 @@ struct Foo {
 	int data = 10;
 };
 
-int main() {
+int tmp_main32() {
 	int n = 7;
 	auto f1 = bind(f, _2, _1, 42, cref(n), n);
 	n = 10;
