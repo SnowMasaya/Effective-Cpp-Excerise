@@ -11,7 +11,7 @@
 #include <unordered_map>
 using namespace std;
 
-unordered_map<string, int>m;
+unordered_map<string, int>m1;
 
 template<typename It>
 void dwin(It b, It e){
@@ -22,7 +22,7 @@ int tmp_main7(){
 	vector<int> v;
 	auto sz = v.size();
 
-	for(const auto& p:m){}
+	for(const auto& p:m1){}
 
 	return 0;
 }

@@ -19,7 +19,7 @@ template <class T> void fn (T&& x) {
 	overload (forward<T>(x));
 }
 
-int main() {
+int tmp_main33() {
 	int a;
 
 	cout << "calling fn with lvalue: ";
