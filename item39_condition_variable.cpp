@@ -16,13 +16,13 @@ using namespace std;
 mutex m;
 condition_variable cv;
 string data;
-bool ready = false;
+bool ready1 = false;
 bool processed = false;
 
 void worker_thread()
 {
 	unique_lock<mutex> lk(m);
-	cv.wait(lk, []{return ready;});
+	cv.wait(lk, []{return ready1;});
 
 	cout << "Worker thread is processing data " << endl;
 	data += " after processing";
@@ -34,14 +34,14 @@ void worker_thread()
 	cv.notify_one();
 }
 
-int main() {
+int tmp_main39() {
 
 	thread worker(worker_thread);
 
 	data = "Example data";
 	{
 		lock_guard<mutex> lk(m);
-		ready = true;
+		ready1 = true;
 		cout << "main() signals data ready for processing " << endl;
 	}
 	cv.notify_one();
